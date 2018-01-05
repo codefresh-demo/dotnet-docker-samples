@@ -1,0 +1,12 @@
+# Default values for dotnet-sample-app.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+replicaCount: 1
+image:
+  repository: r.cfcr.io/codefreshdemo/codefreshdemo/dotnetdockersamples
+  tag: master
+service:
+  name: dotnetapp
+  externalPort: 80
+  internalPort: 80
+imagePullSecret: codefresh-generated-r.cfcr.io-cfcr-demo
